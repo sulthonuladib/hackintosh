@@ -6,11 +6,12 @@ see [`docs/1401-flow.md`](../../../docs/1401-flow.md).
 
 | Target | Result | SMBIOS | Audio | Where |
 |---|---|---|---|---|
-| macOS 15 Sequoia (Darwin `24.99.99`) | ok, `ocvalidate` 1.0.9 clean | `MacPro7,1` | `AppleALC` | written to the Sequoia stick |
-| macOS 26 Tahoe (Darwin `25.99.99`) | ok, `ocvalidate` 1.0.9 clean | `MacPro7,1` | VoodooHDA, installed after macOS | `build/msi-pro-b650m-p/out/` (git-ignored) |
+| macOS 15 Sequoia (Darwin `24.99.99`) | ok, `ocvalidate` 1.0.9 clean | `MacPro7,1` | `AppleALC` | [`efi/sequoia/`](efi/sequoia/) + the Sequoia stick |
+| macOS 26 Tahoe (Darwin `25.99.99`) | ok, `ocvalidate` 1.0.9 clean | `MacPro7,1` | VoodooHDA, installed after macOS | [`efi/tahoe/`](efi/tahoe/) (waiting for a Tahoe recovery) |
 
 `build/` is ignored because a built `config.plist` carries generated `SystemSerialNumber`, `MLB`
-and `SystemUUID`. Only the procedure and the result belong in git.
+and `SystemUUID`. The committed snapshots in [`efi/`](efi/) have those four fields blanked by
+`scripts/sanitize-config.py`; they are for review, not for booting.
 
 ## Inputs
 

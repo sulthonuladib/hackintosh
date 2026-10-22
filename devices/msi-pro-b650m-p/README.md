@@ -70,3 +70,6 @@ does. Nothing here identifies the machine personally (no serials, no UUIDs, no M
 - [`hardware/2026-10-22-hsniffer-collector.log`](hardware/2026-10-22-hsniffer-collector.log) —
   collector progress log.
 - [`hardware/README.md`](hardware/README.md) — how the scan was made and how to repeat it.
+- [`efi/`](efi/) — committed Sequoia and Tahoe EFI snapshots. The `config.plist` there is
+  sanitized (not bootable as-is); each snapshot has its `ocvalidate` output and `inventory.md`.
+- [`build.md`](build.md) — how both EFIs were built with 1401 v2.5.2 on Linux, and the caveats.
