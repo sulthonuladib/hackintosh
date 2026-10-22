@@ -36,8 +36,15 @@ Not cloned on purpose: `nullmoth/nullmoth` (org profile repo, no technical conte
 
 | What | Where | Notes |
 |---|---|---|
-| `ocvalidate` 1.0.8 (Linux/macOS/Windows) | `.reference/tools/opencore/1.0.8/Utilities/ocvalidate/` | Run against the sanitized config snapshots in `devices/<machine>/efi/`. Use the build that matches the OpenCore in use — version mismatches are the only thing the tool can't check. |
+| `ocvalidate` **from the EFI's own OpenCore release** | inside `OpenCore-<version>-{DEBUG,RELEASE}.zip` (1401 keeps it in `~/.cache/1401/`), `Utilities/ocvalidate/ocvalidate.linux` | The validator is tied to its OpenCore version; a different one only prints a NOTE and may accept a config it cannot judge. `scripts/ocvalidate-efi.sh <efi-dir>` reads the release name from 1401's `OCK_Files/history.json`, proves `EFI/OC/OpenCore.efi` and `EFI/BOOT/BOOTx64.efi` are byte-identical to `X64/EFI/{OC/OpenCore.efi,BOOT/BOOTx64.efi}` in that archive, then runs the archive's `ocvalidate.linux`. |
+| `ocvalidate` 1.0.9 (extracted copy of the current EFI's validator) | `.reference/tools/opencore/1.0.9/Utilities/ocvalidate/ocvalidate.linux` | From `OpenCore-1.0.9-DEBUG.zip` (Dortania build `OpenCorePkg-6d8490d`, archive SHA-256 `68ac1c968de5122a815cd6f320c7fa6e85cf18002bf7a5499c2d2b0a9bd562ac`). The built EFIs' boot files match it hash-for-hash. Convenient for a quick run; `scripts/ocvalidate-efi.sh` is the authority because it re-checks the match. |
+| `ocvalidate` 1.0.8 (older builds only) | `.reference/tools/opencore/1.0.8/Utilities/ocvalidate/` | Keep for an EFI actually built from OpenCore 1.0.8. Not used for the current snapshots, and its output is not committed next to them. |
 | `1401-probe-mac.sh`, `1401-probe-linux.py`, `1401-probe-img.zip` | `.reference/1401-probe/release/` | v2.2.0. `1401-probe-img.zip` SHA-256 `35edfb7500a86a6a7052454ce64be5a0b9b94731f1390073847c23232187eb15` (from the release's `SHA256SUMS.txt`). The Mac script scans the running Mac; the Linux script only writes the stick and fetches reports. |
+
+The current snapshots (`devices/msi-pro-b650m-p/efi/{sequoia,tahoe}`) are OpenCore **1.0.9
+DEBUG**, the newest release in Dortania's index when 1401 v2.5.2 built them. Their `ocvalidate`
+output is recorded as `ocvalidate-1.0.9.txt`; the 1.0.8 files were removed because they do not
+match the EFI.
 
 ## Key documents upstream
 

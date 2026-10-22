@@ -12,4 +12,5 @@ this is where i track all config of my hackintosh devices
 - [Scripts](scripts/) — `scan-hardware.py` (NullMoth Hardware-Sniffer from the running OS),
   `sanitize-config.py` (strip SMBIOS identity before committing a config),
   `config-inventory.py` (Markdown inventory of a `config.plist`) and
-  `report-for-1401.py` (drop the ACPI paths 1401's validator rejects).
+  `report-for-1401.py` (drop the ACPI paths 1401's validator rejects) and
+  `ocvalidate-efi.sh` (validate with the EFI's own OpenCore release).

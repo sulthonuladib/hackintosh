@@ -1,3 +1,4 @@
+OpenCore 1.0.9  (OpenCore-1.0.9-DEBUG.zip)
 
 NOTE: This version of ocvalidate is only compatible with OpenCore version 1.0.9!
 

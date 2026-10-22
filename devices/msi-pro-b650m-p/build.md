@@ -4,6 +4,11 @@ Two builds from the same scan and ACPI dump, both produced on Linux by the 1401 
 **v2.5.2** (`fc09d19`). The Windows app was not involved: it is a C# shell around these modules —
 see [`docs/1401-flow.md`](../../../docs/1401-flow.md).
 
+OpenCore in both EFIs: **1.0.9 DEBUG**, Dortania build `OpenCorePkg-6d8490d`
+(`OpenCore-1.0.9-DEBUG.zip`, SHA-256 `68ac1c968de5122a815cd6f320c7fa6e85cf18002bf7a5499c2d2b0a9bd562ac`).
+The built `OpenCore.efi` and `BOOTx64.efi` are byte-identical to that archive;
+`scripts/ocvalidate-efi.sh` re-checks that before running the archive's validator.
+
 | Target | Result | SMBIOS | Audio | Where |
 |---|---|---|---|---|
 | macOS 15 Sequoia (Darwin `24.99.99`) | ok, `ocvalidate` 1.0.9 clean | `MacPro7,1` | `AppleALC` | [`efi/sequoia/`](efi/sequoia/) + the Sequoia stick |

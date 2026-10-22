@@ -1,5 +1,0 @@
-
-NOTE: This version of ocvalidate is only compatible with OpenCore version 1.0.8!
-
-
-Completed validating devices/msi-pro-b650m-p/efi/tahoe/OC/config.plist in 1 ms. No issues found.

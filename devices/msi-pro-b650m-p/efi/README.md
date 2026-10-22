@@ -9,10 +9,22 @@ SSDTs), not just the plist.
 | [`sequoia/`](sequoia/) | macOS 15 Sequoia (`24.99.99`), SMBIOS `MacPro7,1` | 1401 v2.5.2 | AppleALC, RTL812xLucy, NVIDIA policy |
 | [`tahoe/`](tahoe/) | macOS 26 Tahoe (`25.99.99`), SMBIOS `MacPro7,1` | 1401 v2.5.2 | VoodooHDA (manual), `revpatch=sbvmm`, NVIDIA policy |
 
-Each has `inventory.md` (generated from the config by `scripts/config-inventory.py`) and the
-`ocvalidate` output for 1.0.9 (the OpenCore release in the EFI) and 1.0.8 (the newest release
-validator kept in `.reference/tools`). Both report **no issues**. Validation is mandatory before
-any commit: see [`AGENTS.md`](../../../AGENTS.md#validate-the-opencore-config-with-ocvalidate).
+Each has `inventory.md` (generated from the config by `scripts/config-inventory.py`) and
+`ocvalidate-1.0.9.txt` from **the OpenCore release in the EFI**: 1.0.9 DEBUG, Dortania build
+`OpenCorePkg-6d8490d`, archive SHA-256 `68ac1c968de5122a815cd6f320c7fa6e85cf18002bf7a5499c2d2b0a9bd562ac`.
+Both report **no issues**. The earlier 1.0.8 output was removed: it did not match the EFI, and a
+mismatched validator only prints a NOTE before accepting the file.
+
+Validate with the script that proves the match, not with a cached binary:
+
+```sh
+scripts/ocvalidate-efi.sh devices/msi-pro-b650m-p/efi/sequoia
+```
+
+It reads the release from 1401's `OCK_Files/history.json`, compares `OpenCore.efi` and
+`BOOTx64.efi` against the archive byte-for-byte, and runs that archive's validator. Validation is
+mandatory before any commit: see
+[`AGENTS.md`](../../../AGENTS.md#validate-the-opencore-config-with-ocvalidate).
 
 ## The config here is sanitized
 
@@ -40,9 +52,8 @@ scripts/sanitize-config.py devices/msi-pro-b650m-p/efi/sequoia/OC/config.plist \
   devices/msi-pro-b650m-p/efi/sequoia/OC/config.plist
 scripts/sanitize-config.py --check devices/msi-pro-b650m-p/efi/sequoia/OC/config.plist
 
-# 3. validate with the matching OpenCore release and record it
-.reference/tools/opencore/1.0.9/Utilities/ocvalidate/ocvalidate.linux \
-  devices/msi-pro-b650m-p/efi/sequoia/OC/config.plist \
+# 3. validate with the EFI's own OpenCore release and record it
+scripts/ocvalidate-efi.sh devices/msi-pro-b650m-p/efi/sequoia \
   | tee devices/msi-pro-b650m-p/efi/sequoia/ocvalidate-1.0.9.txt
 
 # 4. inventory
