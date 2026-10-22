@@ -1,0 +1,592 @@
+{
+  "Motherboard": {
+    "Name": "MICRO-STAR PRO B650M-P (MS-7E27)",
+    "Chipset": "B650",
+    "Platform": "Desktop"
+  },
+  "BIOS": {
+    "Version": "1.G0",
+    "Release Date": "06/20/2025",
+    "Firmware Type": "UEFI",
+    "Secure Boot": "Disabled",
+    "Above 4G Decoding": "Enabled"
+  },
+  "CPU": {
+    "Manufacturer": "AMD",
+    "Processor Name": "AMD Ryzen 7 7800X3D 8-Core Processor",
+    "Codename": "Raphael",
+    "Core Count": "16",
+    "CPU Count": "01",
+    "SIMD Features": "SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, SSE4a, AVX, AVX2"
+  },
+  "GPU": {
+    "NVIDIA Corporation AD102 [GeForce RTX 4070 Ti SUPER]": {
+      "Manufacturer": "NVIDIA",
+      "Codename": "Unknown",
+      "Device Type": "Discrete GPU",
+      "Bus Type": "PCI",
+      "Device ID": "10DE-2689",
+      "Subsystem ID": "767519DA",
+      "PCI Path": "PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP0.VGA_",
+      "Resizable BAR": "Enabled"
+    },
+    "Advanced Micro Devices, Inc. [AMD/ATI] Raphael [Radeon 610M]": {
+      "Manufacturer": "AMD",
+      "Codename": "Raphael",
+      "Device Type": "Integrated GPU",
+      "Bus Type": "PCI",
+      "Device ID": "1002-164E",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GP17.VGA_",
+      "Resizable BAR": "Disabled"
+    }
+  },
+  "Monitor": {
+    "SKY0010": {
+      "Connector Type": "DP",
+      "Resolution": "2560x1440",
+      "Connected GPU": "NVIDIA Corporation AD102 [GeForce RTX 4070 Ti SUPER]"
+    },
+    "SKY0010_#1": {
+      "Connector Type": "DP",
+      "Resolution": "2560x1440",
+      "Connected GPU": "NVIDIA Corporation AD102 [GeForce RTX 4070 Ti SUPER]"
+    }
+  },
+  "Network": {
+    "Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller": {
+      "Bus Type": "PCI",
+      "Device ID": "10EC-8125",
+      "Subsystem ID": "7E271462"
+    }
+  },
+  "Sound": {
+    "ATI R6xx HDMI": {
+      "Bus Type": "HDAUDIO",
+      "Device ID": "1002-AA01",
+      "Subsystem ID": "AA0100",
+      "Controller Device ID": "1002-1640"
+    },
+    "Realtek ALC897": {
+      "Bus Type": "HDAUDIO",
+      "Device ID": "10EC-0897",
+      "Subsystem ID": "14629E27",
+      "Controller Device ID": "1022-15E3",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x6)",
+      "ACPI Path": "\\_SB.PCI0.GP17.AZAL",
+      "Audio Endpoints": [
+        "ALC897 Alt Analog",
+        "ALC897 Analog"
+      ]
+    },
+    "Nvidia GPU a3 HDMI/DP": {
+      "Bus Type": "HDAUDIO",
+      "Device ID": "10DE-00A3",
+      "Subsystem ID": "19DA7675",
+      "Controller Device ID": "10DE-22BA",
+      "PCI Path": "PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x1)",
+      "ACPI Path": "\\_SB.PCI0.GPP0.HDAU",
+      "Audio Endpoints": [
+        "HDMI 0",
+        "HDMI 1",
+        "HDMI 2",
+        "HDMI 3"
+      ]
+    },
+    "Advanced Micro Devices, Inc. [AMD/ATI] Radeon High Definition Audio Controller": {
+      "Bus Type": "PCI",
+      "Device ID": "1002-1640",
+      "Subsystem ID": "14627E27",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x1)",
+      "ACPI Path": "\\_SB.PCI0.GP17.HDAU",
+      "Audio Endpoints": [
+        "HDMI 0",
+        "HDMI 1",
+        "HDMI 2",
+        "HDMI 3"
+      ]
+    },
+    "ANYKA FHD Camera": {
+      "Bus Type": "USB",
+      "Device ID": "0380-2006"
+    },
+    "Audient Audient iD4": {
+      "Bus Type": "USB",
+      "Device ID": "2708-0009"
+    }
+  },
+  "USB Controllers": {
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 3.1 xHCI": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-15B6",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x3)",
+      "ACPI Path": "\\_SB.PCI0.GP17.XHC0"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 3.1 xHCI_#1": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-15B7",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x4)",
+      "ACPI Path": "\\_SB.PCI0.GP17.XHC1"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 2.0 xHCI": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-15B8",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x3)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GP19.XHC2"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset USB 3.2 Controller": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F7",
+      "Subsystem ID": "11421B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0xc,0x0)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP60.XH00"
+    }
+  },
+  "Input": {
+    "Compx 2.4G Dual Mode Mouse": {
+      "Bus Type": "USB",
+      "Device ID": "3554-F546"
+    },
+    "MSI MYSTIC LIGHT": {
+      "Bus Type": "USB",
+      "Device ID": "0DB0-0076"
+    },
+    "Video Bus": {
+      "Bus Type": "ACPI",
+      "Device": "VIDEOBUS",
+      "Device Type": "Keyboard"
+    },
+    "Compx 2.4G Wireless Receiver": {
+      "Bus Type": "USB",
+      "Device ID": "3554-FA09"
+    },
+    "Audient Audient iD4": {
+      "Bus Type": "USB",
+      "Device ID": "2708-0009"
+    }
+  },
+  "Storage Controllers": {
+    "ADATA Technology Co., Ltd. LEGEND 800 NVMe SSD (DRAM-less)": {
+      "Bus Type": "PCI",
+      "Device ID": "1CC1-628A",
+      "Subsystem ID": "628A1CC1",
+      "PCI Path": "PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP1.NVME",
+      "Disk Drives": [
+        "ADATA LEGEND 850 LITE"
+      ]
+    },
+    "Silicon Motion, Inc. SM2263EN/SM2263XT (DRAM-less) NVMe SSD Controllers": {
+      "Bus Type": "PCI",
+      "Device ID": "126F-2263",
+      "Subsystem ID": "2263126F",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP00.NV00",
+      "Disk Drives": [
+        "TEAM TM8FP6001T"
+      ]
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset SATA Controller": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F6",
+      "Subsystem ID": "10621B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0xd,0x0)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP68.SA00",
+      "Disk Drives": [
+        "ST1000DM003-1ER1"
+      ]
+    }
+  },
+  "System Devices": {
+    "PNP0C14": {
+      "Bus Type": "ACPI",
+      "Device": "PNP0C14",
+      "ACPI Path": "\\_SB.WMIC"
+    },
+    "alarmtimer": {
+      "Bus Type": "PLATFORM",
+      "Device": "alarmtimer"
+    },
+    "acpi-cpufreq": {
+      "Bus Type": "PLATFORM",
+      "Device": "acpi-cpufreq"
+    },
+    "AMDI0010": {
+      "Bus Type": "ACPI",
+      "Device": "AMDI0010",
+      "ACPI Path": "\\_SB.I2CA"
+    },
+    "PNP0B00": {
+      "Bus Type": "ACPI",
+      "Device": "PNP0B00",
+      "ACPI Path": "\\_SB.PCI0.SBRG.RTC0"
+    },
+    "LNXPWRBN": {
+      "Bus Type": "ACPI",
+      "Device": "LNXPWRBN"
+    },
+    "intel_rapl_msr": {
+      "Bus Type": "PLATFORM",
+      "Device": "intel_rapl_msr"
+    },
+    "AMDI0204": {
+      "Bus Type": "ACPI",
+      "Device": "AMDI0204",
+      "ACPI Path": "\\_SB.APPD"
+    },
+    "PNP0C0C": {
+      "Bus Type": "ACPI",
+      "Device": "PNP0C0C",
+      "ACPI Path": "\\_SB.PWRB"
+    },
+    "ACPI000C": {
+      "Bus Type": "ACPI",
+      "Device": "ACPI000C",
+      "ACPI Path": "\\_SB.APAD"
+    },
+    "rtc-efi": {
+      "Bus Type": "PLATFORM",
+      "Device": "rtc-efi"
+    },
+    "PNP0C14_#1": {
+      "Bus Type": "ACPI",
+      "Device": "PNP0C14",
+      "ACPI Path": "\\_SB.WMIO"
+    },
+    "sp5100-tco": {
+      "Bus Type": "PLATFORM",
+      "Device": "sp5100-tco"
+    },
+    "AMDIF031": {
+      "Bus Type": "ACPI",
+      "Device": "AMDIF031",
+      "ACPI Path": "\\_SB.PTIO"
+    },
+    "AMDI0101": {
+      "Bus Type": "ACPI",
+      "Device": "AMDI0101",
+      "ACPI Path": "\\_SB.PMF_"
+    },
+    "AMDI0052": {
+      "Bus Type": "ACPI",
+      "Device": "AMDI0052",
+      "ACPI Path": "\\_SB.PPKG"
+    },
+    "PNP0800": {
+      "Bus Type": "ACPI",
+      "Device": "PNP0800",
+      "ACPI Path": "\\_SB.PCI0.SBRG.SPKR"
+    },
+    "TPM 2.0 Device": {
+      "Bus Type": "ACPI",
+      "Device": "MSFT0101",
+      "ACPI Path": "\\_SB.TPM_"
+    },
+    "PNP0103": {
+      "Bus Type": "ACPI",
+      "Device": "PNP0103",
+      "ACPI Path": "\\HPET"
+    },
+    "MBAD0002": {
+      "Bus Type": "ACPI",
+      "Device": "MBAD0002",
+      "ACPI Path": "\\_SB.MSIV"
+    },
+    "AMDI0030": {
+      "Bus Type": "ACPI",
+      "Device": "AMDI0030",
+      "ACPI Path": "\\_SB.GPIO"
+    },
+    "efivars": {
+      "Bus Type": "PLATFORM",
+      "Device": "efivars"
+    },
+    "serial8250": {
+      "Bus Type": "PLATFORM",
+      "Device": "serial8250"
+    },
+    "i8042": {
+      "Bus Type": "PLATFORM",
+      "Device": "i8042"
+    },
+    "PNP0C14_#2": {
+      "Bus Type": "ACPI",
+      "Device": "PNP0C14",
+      "ACPI Path": "\\AOD_"
+    },
+    "pcspkr": {
+      "Bus Type": "PLATFORM",
+      "Device": "pcspkr"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Upstream Port": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F4",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x6,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP30"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#1": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0xb,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP58"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DB",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x1,0x2)",
+      "ACPI Path": "\\_SB.PCI0.GPP1"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#2": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x9,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP48"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge_#1": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DB",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)",
+      "ACPI Path": "\\_SB.PCI0.GPP7"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#3": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x5,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP28"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#4": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0xa,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP50"
+    },
+    "Advanced Micro Devices, Inc. [AMD] A]": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DD",
+      "Subsystem ID": "14627E27",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x3)",
+      "ACPI Path": "\\_SB.PCI0.GP19"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#5": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x8,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP40"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#6": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0xd,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP68"
+    },
+    "Advanced Micro Devices, Inc. [AMD] A]_#1": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DD",
+      "Subsystem ID": "14627E27",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)",
+      "ACPI Path": "\\_SB.PCI0.GP17"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge_#2": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DB",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x1,0x1)",
+      "ACPI Path": "\\_SB.PCI0.GPP0"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#7": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x4,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP20"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#8": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x7,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP38"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#9": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0xc,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP60"
+    },
+    "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset PCIe Switch Downstream Port_#10": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-43F5",
+      "Subsystem ID": "33281B21",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP00"
+    },
+    "Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller": {
+      "Bus Type": "PCI",
+      "Device ID": "10EC-8125",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0xa,0x0)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP50.EP00"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DA",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x0)",
+      "ACPI Path": "\\_SB.PCI0.D026"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 3": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14E3",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x18,0x3)"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 1": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14E1",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x18,0x1)"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge_#1": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DA",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x1,0x0)",
+      "ACPI Path": "\\_SB.PCI0.D003"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge_#2": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DA",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x4,0x0)",
+      "ACPI Path": "\\_SB.PCI0.D021"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 6": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14E6",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x18,0x6)"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Root Complex": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14D8",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x0,0x0)",
+      "ACPI Path": "\\_SB.PCI0.GNBD"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 4": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14E4",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x18,0x4)"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge_#3": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DA",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x3,0x0)",
+      "ACPI Path": "\\_SB.PCI0.D012"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 2": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14E2",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x18,0x2)"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 0": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14E0",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x18,0x0)"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge_#4": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14DA",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x2,0x0)",
+      "ACPI Path": "\\_SB.PCI0.D00F"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 7": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14E7",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x18,0x7)"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 5": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14E5",
+      "Subsystem ID": "00000000",
+      "PCI Path": "PciRoot(0x0)/Pci(0x18,0x5)"
+    },
+    "Advanced Micro Devices, Inc. [AMD/ATI] Radeon High Definition Audio Controller": {
+      "Bus Type": "PCI",
+      "Device ID": "1002-1640",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x1)",
+      "ACPI Path": "\\_SB.PCI0.GP17.HDAU"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Ryzen HD Audio Controller": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-15E3",
+      "Subsystem ID": "9E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x6)",
+      "ACPI Path": "\\_SB.PCI0.GP17.AZAL"
+    },
+    "NVIDIA Corporation AD102 High Definition Audio Controller": {
+      "Bus Type": "PCI",
+      "Device ID": "10DE-22BA",
+      "Subsystem ID": "767519DA",
+      "PCI Path": "PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x1)",
+      "ACPI Path": "\\_SB.PCI0.GPP0.HDAU"
+    },
+    "Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-790E",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x14,0x3)",
+      "ACPI Path": "\\_SB.PCI0.SBRG"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge IOMMU": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-14D9",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x0,0x2)",
+      "ACPI Path": "\\_SB.PCI0.IOMA"
+    },
+    "Advanced Micro Devices, Inc. [AMD] Family 19h PSP/CCP": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-1649",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x2)",
+      "ACPI Path": "\\_SB.PCI0.GP17.APSP"
+    },
+    "Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller": {
+      "Bus Type": "PCI",
+      "Device ID": "1022-790B",
+      "Subsystem ID": "7E271462",
+      "PCI Path": "PciRoot(0x0)/Pci(0x14,0x0)",
+      "ACPI Path": "\\_SB.PCI0.D032"
+    }
+  }
+}
