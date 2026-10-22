@@ -26,12 +26,8 @@ It calls `p1401/validate.py`: `_opencore_release()` reads `OCK_Files/history.jso
 `OpenCore.efi`/`BOOTx64.efi`/drivers match it, then `run_ocvalidate()` runs it. Current snapshots
 are OpenCore **1.0.9 DEBUG**.
 
-Expected: `Completed validating ... No issues found.` and exit 0. Record it next to the snapshot:
-
-```sh
-scripts/ocvalidate-efi.sh devices/<machine>/efi/<target> \
-  | tee devices/<machine>/efi/<target>/ocvalidate-<version>.txt
-```
+Expected: `Completed validating ... No issues found.` and exit 0. Run it on demand; the output is
+not committed — it embeds the local path and goes stale.
 
 `ocvalidate` does not check kext files/order or boot-file hashes; `p1401/validate.py` does that
 during a build.
@@ -41,7 +37,7 @@ during a build.
 ```
 devices/<machine>/README.md          identity, status, hardware, PCI/ACPI paths
 devices/<machine>/hardware/          NullMoth Hardware-Sniffer reports
-devices/<machine>/efi/<target>/      EFI/ + inventory.md + ocvalidate-<version>.txt
+devices/<machine>/efi/<target>/      EFI/ + inventory.md
 devices/<machine>/build.md           how the EFI was built
 docs/                                reference.md, 1401-flow.md
 scripts/                             scan-hardware.py, report-for-1401.py,

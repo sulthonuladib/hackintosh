@@ -42,9 +42,8 @@ Not cloned on purpose: `nullmoth/nullmoth` (org profile repo, no technical conte
 | `1401-probe-mac.sh`, `1401-probe-linux.py`, `1401-probe-img.zip` | `.reference/1401-probe/release/` | v2.2.0. `1401-probe-img.zip` SHA-256 `35edfb7500a86a6a7052454ce64be5a0b9b94731f1390073847c23232187eb15` (from the release's `SHA256SUMS.txt`). The Mac script scans the running Mac; the Linux script only writes the stick and fetches reports. |
 
 The current snapshots (`devices/msi-pro-b650m-p/efi/{sequoia,tahoe}`) are OpenCore **1.0.9
-DEBUG**, the newest release in Dortania's index when 1401 v2.5.2 built them. Their `ocvalidate`
-output is recorded as `ocvalidate-1.0.9.txt`; the 1.0.8 files were removed because they do not
-match the EFI.
+DEBUG**, the newest release in Dortania's index when 1401 v2.5.2 built them. Validate them with
+`scripts/ocvalidate-efi.sh`; the output is not committed (it embeds the local path and goes stale).
 
 ## Key documents upstream
 
