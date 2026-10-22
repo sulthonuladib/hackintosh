@@ -12,12 +12,12 @@ that went on each installer stick.
 
 ## Repository
 
-| Path | What |
-|---|---|
-| [`devices/`](devices/) | one directory per machine: hardware scan, `efi/` snapshots, `build.md` |
-| [`docs/`](docs/) | [upstream repos and tools](docs/reference.md), [the 1401 flow](docs/1401-flow.md) |
-| [`scripts/`](scripts/) | hardware scan, report fixup, config sanitize/inventory, matched `ocvalidate` |
-| [`AGENTS.md`](AGENTS.md) | rules for changing this repository |
+| Path                     | What                                                                              |
+| ------------------------ | --------------------------------------------------------------------------------- |
+| [`devices/`](devices/)   | one directory per machine: hardware scan, `efi/` snapshots, `build.md`            |
+| [`docs/`](docs/)         | [upstream repos and tools](docs/reference.md), [the 1401 flow](docs/1401-flow.md) |
+| [`scripts/`](scripts/)   | hardware scan, report fixup, config sanitize/inventory, matched `ocvalidate`      |
+| [`AGENTS.md`](AGENTS.md) | rules for changing this repository                                                |
 
 `.reference/` (upstream clones and tools) and `build/` (EFI output with generated SMBIOS identity)
 are git-ignored. This repository is public; [`AGENTS.md`](AGENTS.md) lists what is never committed.

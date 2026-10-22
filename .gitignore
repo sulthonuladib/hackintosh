@@ -9,3 +9,5 @@
 
 # Firmware dumps (root-only readable; may carry board serials/IDs)
 /devices/*/acpi/
+
+node_modules/

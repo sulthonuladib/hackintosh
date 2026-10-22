@@ -4,10 +4,10 @@ The EFIs 1401 built for this machine, committed so configuration changes are rev
 Each `<target>/` contains the complete `EFI/` tree (OpenCore 1.0.9, `BOOTx64.efi`, drivers, kexts,
 ACPI SSDTs), not just the plist, plus that snapshot's inventory and validation output.
 
-| Directory | Target | Built with | Config |
-|---|---|---|---|
-| [`sequoia/`](sequoia/) | macOS 15 Sequoia (`24.99.99`), SMBIOS `MacPro7,1` | 1401 v2.5.2 | AppleALC, RTL812xLucy, NVIDIA policy |
-| [`tahoe/`](tahoe/) | macOS 26 Tahoe (`25.99.99`), SMBIOS `MacPro7,1` | 1401 v2.5.2 | VoodooHDA (manual), `revpatch=sbvmm`, NVIDIA policy |
+| Directory              | Target                                            | Built with  | Config                                              |
+| ---------------------- | ------------------------------------------------- | ----------- | --------------------------------------------------- |
+| [`sequoia/`](sequoia/) | macOS 15 Sequoia (`24.99.99`), SMBIOS `MacPro7,1` | 1401 v2.5.2 | AppleALC, RTL812xLucy, NVIDIA policy                |
+| [`tahoe/`](tahoe/)     | macOS 26 Tahoe (`25.99.99`), SMBIOS `MacPro7,1`   | 1401 v2.5.2 | VoodooHDA (manual), `revpatch=sbvmm`, NVIDIA policy |
 
 Each has `inventory.md` (generated from the config by `scripts/config-inventory.py`). Validation
 uses **the OpenCore release in the EFI** — 1.0.9 DEBUG, Dortania build `OpenCorePkg-6d8490d`,

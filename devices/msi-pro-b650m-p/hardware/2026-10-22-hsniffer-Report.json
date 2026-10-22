@@ -76,10 +76,7 @@
       "Controller Device ID": "1022-15E3",
       "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x6)",
       "ACPI Path": "\\_SB.PCI0.GP17.AZAL",
-      "Audio Endpoints": [
-        "ALC897 Alt Analog",
-        "ALC897 Analog"
-      ]
+      "Audio Endpoints": ["ALC897 Alt Analog", "ALC897 Analog"]
     },
     "Nvidia GPU a3 HDMI/DP": {
       "Bus Type": "HDAUDIO",
@@ -88,12 +85,7 @@
       "Controller Device ID": "10DE-22BA",
       "PCI Path": "PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x1)",
       "ACPI Path": "\\_SB.PCI0.GPP0.HDAU",
-      "Audio Endpoints": [
-        "HDMI 0",
-        "HDMI 1",
-        "HDMI 2",
-        "HDMI 3"
-      ]
+      "Audio Endpoints": ["HDMI 0", "HDMI 1", "HDMI 2", "HDMI 3"]
     },
     "Advanced Micro Devices, Inc. [AMD/ATI] Radeon High Definition Audio Controller": {
       "Bus Type": "PCI",
@@ -101,12 +93,7 @@
       "Subsystem ID": "14627E27",
       "PCI Path": "PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x1)",
       "ACPI Path": "\\_SB.PCI0.GP17.HDAU",
-      "Audio Endpoints": [
-        "HDMI 0",
-        "HDMI 1",
-        "HDMI 2",
-        "HDMI 3"
-      ]
+      "Audio Endpoints": ["HDMI 0", "HDMI 1", "HDMI 2", "HDMI 3"]
     },
     "ANYKA FHD Camera": {
       "Bus Type": "USB",
@@ -177,9 +164,7 @@
       "Subsystem ID": "628A1CC1",
       "PCI Path": "PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)",
       "ACPI Path": "\\_SB.PCI0.GPP1.NVME",
-      "Disk Drives": [
-        "ADATA LEGEND 850 LITE"
-      ]
+      "Disk Drives": ["ADATA LEGEND 850 LITE"]
     },
     "Silicon Motion, Inc. SM2263EN/SM2263XT (DRAM-less) NVMe SSD Controllers": {
       "Bus Type": "PCI",
@@ -187,9 +172,7 @@
       "Subsystem ID": "2263126F",
       "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)",
       "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP00.NV00",
-      "Disk Drives": [
-        "TEAM TM8FP6001T"
-      ]
+      "Disk Drives": ["TEAM TM8FP6001T"]
     },
     "Advanced Micro Devices, Inc. [AMD] 600 Series Chipset SATA Controller": {
       "Bus Type": "PCI",
@@ -197,9 +180,7 @@
       "Subsystem ID": "10621B21",
       "PCI Path": "PciRoot(0x0)/Pci(0x2,0x1)/Pci(0x0,0x0)/Pci(0xd,0x0)/Pci(0x0,0x0)",
       "ACPI Path": "\\_SB.PCI0.GPP7.UP00.DP68.SA00",
-      "Disk Drives": [
-        "ST1000DM003-1ER1"
-      ]
+      "Disk Drives": ["ST1000DM003-1ER1"]
     }
   },
   "System Devices": {

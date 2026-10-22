@@ -36,8 +36,8 @@ devices/<vendor>-<model>-<short>/
 
 ## Machines
 
-| Directory | Machine | CPU / GPU | Target | Scan |
-|---|---|---|---|---|
+| Directory                             | Machine                   | CPU / GPU                                         | Target                                  | Scan                    |
+| ------------------------------------- | ------------------------- | ------------------------------------------------- | --------------------------------------- | ----------------------- |
 | [`msi-pro-b650m-p`](msi-pro-b650m-p/) | MSI PRO B650M-P (MS-7E27) | Ryzen 7 7800X3D / RTX 4070 Ti SUPER + Radeon 610M | macOS 26 Tahoe (NullMoth NVIDIA driver) | done — Hardware-Sniffer |
 
 ## Scanning

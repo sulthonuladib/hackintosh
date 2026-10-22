@@ -9,10 +9,10 @@ OpenCore in both EFIs: **1.0.9 DEBUG**, Dortania build `OpenCorePkg-6d8490d`
 The built `OpenCore.efi` and `BOOTx64.efi` are byte-identical to that archive;
 `scripts/ocvalidate-efi.sh` re-checks that before running the archive's validator.
 
-| Target | Result | SMBIOS | Audio | Where |
-|---|---|---|---|---|
-| macOS 15 Sequoia (Darwin `24.99.99`) | ok, `ocvalidate` 1.0.9 clean | `MacPro7,1` | `AppleALC` | [`efi/sequoia/`](efi/sequoia/) + the Sequoia stick |
-| macOS 26 Tahoe (Darwin `25.99.99`) | ok, `ocvalidate` 1.0.9 clean | `MacPro7,1` | VoodooHDA, installed after macOS | [`efi/tahoe/`](efi/tahoe/) (waiting for a Tahoe recovery) |
+| Target                               | Result                       | SMBIOS      | Audio                            | Where                                                     |
+| ------------------------------------ | ---------------------------- | ----------- | -------------------------------- | --------------------------------------------------------- |
+| macOS 15 Sequoia (Darwin `24.99.99`) | ok, `ocvalidate` 1.0.9 clean | `MacPro7,1` | `AppleALC`                       | [`efi/sequoia/`](efi/sequoia/) + the Sequoia stick        |
+| macOS 26 Tahoe (Darwin `25.99.99`)   | ok, `ocvalidate` 1.0.9 clean | `MacPro7,1` | VoodooHDA, installed after macOS | [`efi/tahoe/`](efi/tahoe/) (waiting for a Tahoe recovery) |
 
 `build/` is ignored because a built `config.plist` carries generated `SystemSerialNumber`, `MLB`
 and `SystemUUID`. The committed snapshots in [`efi/`](efi/) have those four fields blanked by

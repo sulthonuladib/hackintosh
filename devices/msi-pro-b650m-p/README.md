@@ -20,13 +20,13 @@ the NullMoth NVIDIA driver.
 
 ## Status
 
-| Step                                                                             | State                                        |
-| -------------------------------------------------------------------------------- | -------------------------------------------- |
-| Hardware scan (NullMoth Hardware-Sniffer, run from this OS)                      | done — [`hardware/`](hardware/)              |
-| Full 1401 Probe stick report (VBIOS, ACPI, CPUID/MSR, PCI config, driver traces) | optional, needs a spare stick                |
-| Sequoia EFI (1401 v2.5.2 on Linux)                                               | built + `ocvalidate` clean, on the Sequoia stick — [`build.md`](build.md) |
+| Step                                                                             | State                                                                             |
+| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Hardware scan (NullMoth Hardware-Sniffer, run from this OS)                      | done — [`hardware/`](hardware/)                                                   |
+| Full 1401 Probe stick report (VBIOS, ACPI, CPUID/MSR, PCI config, driver traces) | optional, needs a spare stick                                                     |
+| Sequoia EFI (1401 v2.5.2 on Linux)                                               | built + `ocvalidate` clean, on the Sequoia stick — [`build.md`](build.md)         |
 | Tahoe EFI                                                                        | built + `ocvalidate` clean, waiting for a Tahoe recovery — [`build.md`](build.md) |
-| macOS install                                                                    | next: boot the stick                         |
+| macOS install                                                                    | next: boot the stick                                                              |
 
 ## PCI paths (for `DeviceProperties` / ACPI)
 

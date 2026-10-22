@@ -1,0 +1,16 @@
+{
+  "name": "hackintosh",
+  "private": true,
+  "type": "module",
+  "module": "index.ts",
+  "scripts": {
+    "format": "oxfmt"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "oxfmt": "^0.74.0"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}

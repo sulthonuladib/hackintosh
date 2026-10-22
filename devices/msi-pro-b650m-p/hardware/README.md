@@ -7,10 +7,10 @@ and no reboot, and only reads `/sys`, `/proc`, `lspci` and `lsusb`.
 
 ## Files
 
-| File | What |
-|---|---|
-| `2026-10-22-hsniffer-Report.json` | raw report, unmodified; sections `BIOS`, `CPU`, `GPU`, `Input`, `Monitor`, `Motherboard`, `Network`, `Sound`, `Storage Controllers`, `System Devices`, `USB Controllers` |
-| `2026-10-22-hsniffer-collector.log` | the collector's progress log for that run |
+| File                                | What                                                                                                                                                                     |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `2026-10-22-hsniffer-Report.json`   | raw report, unmodified; sections `BIOS`, `CPU`, `GPU`, `Input`, `Monitor`, `Motherboard`, `Network`, `Sound`, `Storage Controllers`, `System Devices`, `USB Controllers` |
+| `2026-10-22-hsniffer-collector.log` | the collector's progress log for that run                                                                                                                                |
 
 ## Repeat it
 
