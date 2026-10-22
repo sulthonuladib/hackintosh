@@ -17,14 +17,22 @@ devices/<vendor>-<model>-<short>/
 
 - **This repository is public.** Never commit `SystemSerialNumber`, `MLB`, `SystemUUID`, `ROM`,
   Wi-Fi/Bluetooth MAC addresses, Apple ID, FileVault keys, or a raw EFI directory.
-  `scripts/sanitize-config.py` strips the identity fields from a `config.plist` before it is added.- 1401-probe reports are redacted by the tool itself (serials, UUIDs, MAC/BT addresses, Wi-Fi
+  `scripts/sanitize-config.py` strips the identity fields from a `config.plist` before it is added.
+- **Validate every `config.plist` with `ocvalidate` before committing**, using the validator for the
+  OpenCore version in the EFI. See [`AGENTS.md`](../AGENTS.md#validate-the-opencore-config-with-ocvalidate)
+  for the command, the expected `No issues found`, and where to record the output. `1401 build`
+  validates its own output, but a snapshot is re-validated because sanitizing rewrites the plist.
+- 1401-probe reports are redacted by the tool itself (serials, UUIDs, MAC/BT addresses, Wi-Fi
   names, paired-device names, computer and user names). Read them once before committing anyway.
 - Every hardware claim in a machine's `README.md` states where it came from: a probe report, an
   OpenCore log, or "unverified".
 - Local mount paths of removable media are not recorded in this repo. Refer to "the installer
   stick" or "the probe stick" instead.
-- Don't commit EFI binaries, kexts, or `OpenCore.efi`. Track `config.plist`, its ACPI/kext/driver
-  inventory, and `ocvalidate` output.
+- EFI snapshots are committed under `devices/<machine>/efi/<target>/` so config changes are
+  diffable. Each snapshot is a whole `EFI/` tree, but its `config.plist` is sanitized and is **not
+  bootable as-is**; the bootable copy stays on the stick and in git-ignored `build/`.
+- Raw ACPI dumps (`devices/*/acpi/`) are not committed: firmware tables can carry board serials
+  and IDs. The procedure to regenerate them is in the machine's `build.md`.
 
 ## Machines
 
