@@ -6,3 +6,6 @@
 
 # 1401 build output (EFI with generated SMBIOS identity)
 /build/
+
+# Firmware dumps (root-only readable; may carry board serials/IDs)
+/devices/*/acpi/
