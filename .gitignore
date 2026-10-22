@@ -1,0 +1,5 @@
+# Third-party reference clones (see docs/reference.md)
+.reference/
+
+# macOS
+.DS_Store
