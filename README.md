@@ -1,16 +1,23 @@
 # Hackintosh
 
-this is where i track all config of my hackintosh devices
+macOS-on-PC configuration for my machines: hardware scans, OpenCore EFI snapshots, and the build
+that went on each installer stick.
 
-## Documents
+## Current machine
 
-- [Devices](devices/) — per-machine hardware dumps and OpenCore config state. Current machine:
-  [msi-pro-b650m-p](devices/msi-pro-b650m-p/).
-- [AGENTS.md](AGENTS.md) — rules for changing this repo, including the mandatory `ocvalidate` step.
-- [Reference repositories](docs/reference.md) — upstream projects this config is based on (cloned into git-ignored `.reference/`, pinned commits and key docs).
-- [1401 flow](docs/1401-flow.md) — how the Windows 1401 app works step by step (C# shell → Python engine → OpenCore build → stick) and how to run the same engine on Linux without Windows.
-- [Scripts](scripts/) — `scan-hardware.py` (NullMoth Hardware-Sniffer from the running OS),
-  `sanitize-config.py` (strip SMBIOS identity before committing a config),
-  `config-inventory.py` (Markdown inventory of a `config.plist`) and
-  `report-for-1401.py` (drop the ACPI paths 1401's validator rejects) and
-  `ocvalidate-efi.sh` (validate with the EFI's own OpenCore release).
+[**msi-pro-b650m-p**](devices/msi-pro-b650m-p/) — MSI PRO B650M-P, Ryzen 7 7800X3D, RTX 4070 Ti SUPER.
+
+- **Sequoia 15** — EFI built, validated, on the Sequoia stick.
+- **Tahoe 26** — EFI built and validated, waiting for a Tahoe recovery medium.
+
+## Repository
+
+| Path | What |
+|---|---|
+| [`devices/`](devices/) | one directory per machine: hardware scan, `efi/` snapshots, `build.md` |
+| [`docs/`](docs/) | [upstream repos and tools](docs/reference.md), [the 1401 flow](docs/1401-flow.md) |
+| [`scripts/`](scripts/) | hardware scan, report fixup, config sanitize/inventory, matched `ocvalidate` |
+| [`AGENTS.md`](AGENTS.md) | rules for changing this repository |
+
+`.reference/` (upstream clones and tools) and `build/` (EFI output with generated SMBIOS identity)
+are git-ignored. This repository is public; [`AGENTS.md`](AGENTS.md) lists what is never committed.
