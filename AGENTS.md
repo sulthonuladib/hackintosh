@@ -105,7 +105,7 @@ during a build. A clean `ocvalidate` is the minimum, not proof that the machine 
    `git -C .reference/1401 checkout v2.5.2`. `--macos 24` is Sequoia, `--macos 25` is Tahoe.
 3. **Build**: commands are in [`docs/1401-flow.md`](docs/1401-flow.md) and the machine's
    `build.md`. Output goes to `build/` (ignored).
-4. **Snapshot**: copy the built `EFI/` into `devices/<machine>/efi/<target>/`, sanitize the config,
+4. **Snapshot**: copy the built `EFI/` to `devices/<machine>/efi/<target>/EFI/`, sanitize the config,
    run `ocvalidate` (above), regenerate `inventory.md` with `scripts/config-inventory.py`, and
    update `build.md` + the snapshot table.
 5. **Stick**: not with `p1401.usbwriter` on Linux. Replace `EFI/` on the FAT32 partition, copy

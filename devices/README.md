@@ -29,7 +29,7 @@ devices/<vendor>-<model>-<short>/
 - Local mount paths of removable media are not recorded in this repo. Refer to "the installer
   stick" or "the probe stick" instead.
 - EFI snapshots are committed under `devices/<machine>/efi/<target>/` so config changes are
-  diffable. Each snapshot is a whole `EFI/` tree, but its `config.plist` is sanitized and is **not
+  diffable. Each snapshot contains a whole `EFI/` tree, but its `config.plist` is sanitized and is **not
   bootable as-is**; the bootable copy stays on the stick and in git-ignored `build/`.
 - Raw ACPI dumps (`devices/*/acpi/`) are not committed: firmware tables can carry board serials
   and IDs. The procedure to regenerate them is in the machine's `build.md`.

@@ -1,8 +1,8 @@
 # EFI snapshots — msi-pro-b650m-p
 
 The EFIs 1401 built for this machine, committed so configuration changes are reviewable in git.
-Each directory is a complete `EFI/` tree (OpenCore 1.0.9, `BOOTx64.efi`, drivers, kexts, ACPI
-SSDTs), not just the plist.
+Each `<target>/` contains the complete `EFI/` tree (OpenCore 1.0.9, `BOOTx64.efi`, drivers, kexts,
+ACPI SSDTs), not just the plist, plus that snapshot's inventory and validation output.
 
 | Directory | Target | Built with | Config |
 |---|---|---|---|
@@ -28,7 +28,7 @@ mandatory before any commit: see
 
 ## The config here is sanitized
 
-`config.plist` in these snapshots has `SystemSerialNumber`, `MLB`, `SystemUUID` blanked and `ROM`
+`EFI/OC/config.plist` in these snapshots has `SystemSerialNumber`, `MLB`, `SystemUUID` blanked and `ROM`
 zeroed by `scripts/sanitize-config.py`. This repository is public and those fields are the
 machine's Apple identity.
 
@@ -43,21 +43,22 @@ with `macserial -g --model MacPro7,1` output (`MLB`/serial) plus a random 6-byte
 ## Refresh a snapshot
 
 ```sh
-# 1. copy the new build
+# 1. copy the new build (the snapshot mirrors the build's EFI/ directory)
 rm -rf devices/msi-pro-b650m-p/efi/sequoia
-cp -a build/msi-pro-b650m-p/out-sequoia/EFI devices/msi-pro-b650m-p/efi/sequoia
+mkdir -p devices/msi-pro-b650m-p/efi/sequoia
+cp -a build/msi-pro-b650m-p/out-sequoia/EFI devices/msi-pro-b650m-p/efi/sequoia/
 
 # 2. strip identity and prove it
-scripts/sanitize-config.py devices/msi-pro-b650m-p/efi/sequoia/OC/config.plist \
-  devices/msi-pro-b650m-p/efi/sequoia/OC/config.plist
-scripts/sanitize-config.py --check devices/msi-pro-b650m-p/efi/sequoia/OC/config.plist
+scripts/sanitize-config.py devices/msi-pro-b650m-p/efi/sequoia/EFI/OC/config.plist \
+  devices/msi-pro-b650m-p/efi/sequoia/EFI/OC/config.plist
+scripts/sanitize-config.py --check devices/msi-pro-b650m-p/efi/sequoia/EFI/OC/config.plist
 
 # 3. validate with the EFI's own OpenCore release and record it
 scripts/ocvalidate-efi.sh devices/msi-pro-b650m-p/efi/sequoia \
   | tee devices/msi-pro-b650m-p/efi/sequoia/ocvalidate-1.0.9.txt
 
 # 4. inventory
-scripts/config-inventory.py devices/msi-pro-b650m-p/efi/sequoia/OC/config.plist \
+scripts/config-inventory.py devices/msi-pro-b650m-p/efi/sequoia/EFI/OC/config.plist \
   > devices/msi-pro-b650m-p/efi/sequoia/inventory.md
 ```
 
